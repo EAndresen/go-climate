@@ -31,7 +31,7 @@ func putNode(node ClimateNode) string {
 
 	av, err := dynamodbattribute.MarshalMap(node)
 	if err != nil {
-		fmt.Println("Got error marshalling new movie item:")
+		fmt.Println("Got error marshalling new node item:")
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}
